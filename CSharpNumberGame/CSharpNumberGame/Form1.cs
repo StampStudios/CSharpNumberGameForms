@@ -22,6 +22,7 @@ namespace CSharpNumberGame
         private void Form1_Load(object sender, EventArgs e)
         {
 
+            // Creates a message box, on initialisation, stating us as the developers.
             MessageBox.Show("Developed by Jack Tench and Tom Tinsley for release on GitHub.");
 
             Random rnd = new Random();

@@ -17,6 +17,8 @@ namespace CSharpNumberGame
             InitializeComponent();
         }
 
+        int targetNumber { get; set; }
+
         private void Form1_Load(object sender, EventArgs e)
         {
 
@@ -25,6 +27,7 @@ namespace CSharpNumberGame
             Random rnd = new Random();
             int targetNumber = rnd.Next(1, 10);
             string targetNumberStr = targetNumber.ToString();
+            MessageBox.Show(targetNumberStr);
 
         }
 
@@ -33,7 +36,10 @@ namespace CSharpNumberGame
 
             string usrGuessStr = textBox1.Text;
             int usrGuessInt = Int32.Parse(usrGuessStr);
-
+            if (usrGuessInt == targetNumber)
+            {
+                MessageBox.Show("Correct");
+            }
         }
     }
 }

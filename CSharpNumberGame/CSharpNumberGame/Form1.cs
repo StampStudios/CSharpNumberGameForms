@@ -30,7 +30,10 @@ namespace CSharpNumberGame
 
         private void button1_Click(object sender, EventArgs e)
         {
-            // Code to check the number goes here.
+
+            string usrGuessStr = textBox1.Text;
+            int usrGuessInt = Int32.Parse(usrGuessStr);
+
         }
     }
 }

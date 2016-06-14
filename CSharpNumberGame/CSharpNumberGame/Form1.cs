@@ -24,6 +24,7 @@ namespace CSharpNumberGame
 
             Random rnd = new Random();
             int targetNumber = rnd.Next(1, 10);
+            string targetNumberStr = targetNumber.ToString();
 
         }
 

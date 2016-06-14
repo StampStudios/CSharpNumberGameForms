@@ -19,7 +19,12 @@ namespace CSharpNumberGame
 
         private void Form1_Load(object sender, EventArgs e)
         {
+
             MessageBox.Show("Developed by Jack Tench and Tom Tinsley for release on GitHub.");
+
+            Random rnd = new Random();
+            int targetNumber = rnd.Next(1, 10);
+
         }
     }
 }

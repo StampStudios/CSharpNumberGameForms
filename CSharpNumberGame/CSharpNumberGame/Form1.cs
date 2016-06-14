@@ -16,5 +16,10 @@ namespace CSharpNumberGame
         {
             InitializeComponent();
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            MessageBox.Show("Developed by Jack Tench and Tom Tinsley for release on GitHub.");
+        }
     }
 }

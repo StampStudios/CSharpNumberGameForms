@@ -36,6 +36,7 @@ namespace CSharpNumberGame
 
             string usrGuessStr = textBox1.Text;
             int usrGuessInt = Int32.Parse(usrGuessStr);
+            MessageBox.Show(textBox1.Text);
             if (usrGuessInt == targetNumber)
             {
                 MessageBox.Show("Correct");

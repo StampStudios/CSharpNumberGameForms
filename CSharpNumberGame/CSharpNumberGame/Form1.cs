@@ -26,5 +26,10 @@ namespace CSharpNumberGame
             int targetNumber = rnd.Next(1, 10);
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            // Code to check the number goes here.
+        }
     }
 }

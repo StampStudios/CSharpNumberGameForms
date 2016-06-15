@@ -25,9 +25,8 @@ namespace CSharpNumberGame
             MessageBox.Show("Developed by Jack Tench and Tom Tinsley for release on GitHub.");
 
             Random rnd = new Random();
-            targetNumber = rnd.Next(1, 10);
+            targetNumber = rnd.Next(1, 100);
             string targetNumberStr = targetNumber.ToString();
-            MessageBox.Show(targetNumberStr);
 
         }
 

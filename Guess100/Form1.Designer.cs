@@ -1,4 +1,4 @@
-﻿namespace CSharpNumberGame
+﻿namespace Guess100
 {
     partial class Form1
     {

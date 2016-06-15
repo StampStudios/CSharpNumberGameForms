@@ -2,7 +2,7 @@
 using System.Linq;
 using System.Windows.Forms;
 
-namespace CSharpNumberGame
+namespace Guess100
 {
     public partial class Form1 : Form
     {

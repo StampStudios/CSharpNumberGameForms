@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Windows.Forms;
 
-namespace CSharpNumberGame
+namespace Guess100
 {
     static class Program
     {

@@ -17,16 +17,15 @@ namespace CSharpNumberGame
             InitializeComponent();
         }
 
-        int targetNumber { get; set; }
+        static int targetNumber;
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
-            // Creates a message box, on initialisation, stating us as the developers.
+            
             MessageBox.Show("Developed by Jack Tench and Tom Tinsley for release on GitHub.");
 
             Random rnd = new Random();
-            int targetNumber = rnd.Next(1, 10);
+            targetNumber = rnd.Next(1, 10);
             string targetNumberStr = targetNumber.ToString();
             MessageBox.Show(targetNumberStr);
 
@@ -37,7 +36,6 @@ namespace CSharpNumberGame
 
             string usrGuessStr = textBox1.Text;
             int usrGuessInt = Int32.Parse(usrGuessStr);
-            MessageBox.Show(usrGuessInt.ToString());
             if (usrGuessInt == targetNumber)
             {
                 MessageBox.Show("Correct");

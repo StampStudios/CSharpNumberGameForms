@@ -11,6 +11,7 @@ namespace CSharpNumberGame
         }
 
         int targetNumber;
+        int counter = 0;
 
         private void Form1_Load(object sender, EventArgs e)
         {
@@ -18,7 +19,7 @@ namespace CSharpNumberGame
             MessageBox.Show("Developed by Jack Tench and Tom Tinsley for release on GitHub.");
 
             Random rnd = new Random();
-            targetNumber = rnd.Next(1, 5);
+            targetNumber = rnd.Next(1, 100);
             string targetNumberStr = targetNumber.ToString();
 
         }
@@ -27,10 +28,18 @@ namespace CSharpNumberGame
         {
 
             string usrGuessStr = textBox1.Text;
-            int usrGuessInt = Int32.Parse(usrGuessStr);
+            int usrGuessInt = int.Parse(usrGuessStr);
+            counter += 1;
             if (usrGuessInt == targetNumber)
             {
-                MessageBox.Show("Correct");
+                if (counter == 1)
+                {
+                    MessageBox.Show("Congratulations you got it first time!");
+                }
+                else
+                {
+                    MessageBox.Show("Congratulations you got it in " + counter + " guesses.");
+                }
             }
         }
     }

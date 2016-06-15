@@ -33,18 +33,26 @@ namespace CSharpNumberGame
             if (usrGuessDigit == true)
             {
                 int usrGuessInt = int.Parse(usrGuessStr);
-                counter += 1;
-                if (usrGuessInt == targetNumber)
+                if (Enumerable.Range(1, 100).Contains(usrGuessInt))
                 {
-                    if (counter == 1)
+                    counter += 1;
+                    if (usrGuessInt == targetNumber)
                     {
-                        MessageBox.Show("Congratulations you got it first time!");
-                    }
-                    else
-                    {
-                        MessageBox.Show("Congratulations you got it in " + counter + " guesses.");
+                        if (counter == 1)
+                        {
+                            MessageBox.Show("Congratulations you got it first time!");
+                        }
+                        else
+                        {
+                            MessageBox.Show("Congratulations you got it in " + counter + " guesses.");
+                        }
                     }
                 }
+                else
+                {
+                    MessageBox.Show("Please enter a number from 1-100.");
+                }
+
             }
             else
             {

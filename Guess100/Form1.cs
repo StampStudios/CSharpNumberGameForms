@@ -2,7 +2,7 @@
 using System.Linq;
 using System.Windows.Forms;
 
-namespace Guess100
+namespace guess100
 {
     public partial class Form1 : Form
     {

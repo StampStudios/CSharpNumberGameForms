@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Windows.Forms;
 
-namespace Guess100
+namespace guess100
 {
     static class Program
     {

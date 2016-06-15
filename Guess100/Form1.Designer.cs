@@ -1,4 +1,4 @@
-﻿namespace Guess100
+﻿namespace guess100
 {
     partial class Form1
     {

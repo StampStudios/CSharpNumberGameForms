@@ -28,35 +28,43 @@ namespace CSharpNumberGame
         private void button1_Click(object sender, EventArgs e)
         {
 
-            string usrGuessStr = textBox1.Text;
-            bool usrGuessDigit = usrGuessStr.All(char.IsDigit);
-            if (usrGuessDigit == true)
+            if (textBox1.Text != "")
             {
-                int usrGuessInt = int.Parse(usrGuessStr);
-                if (Enumerable.Range(1, 100).Contains(usrGuessInt))
+                string usrGuessStr = textBox1.Text;
+                bool usrGuessDigit = usrGuessStr.All(char.IsDigit);
+                if (usrGuessDigit == true)
                 {
-                    counter += 1;
-                    if (usrGuessInt == targetNumber)
+                    int usrGuessInt = int.Parse(usrGuessStr);
+                    if (Enumerable.Range(1, 100).Contains(usrGuessInt))
                     {
-                        if (counter == 1)
+                        counter += 1;
+                        if (usrGuessInt == targetNumber)
                         {
-                            MessageBox.Show("Congratulations you got it first time!");
-                        }
-                        else
-                        {
-                            MessageBox.Show("Congratulations you got it in " + counter + " guesses.");
+                            if (counter == 1)
+                            {
+                                MessageBox.Show("Congratulations you got it first time!");
+                            }
+                            else
+                            {
+                                MessageBox.Show("Congratulations you got it in " + counter + " guesses.");
+                            }
                         }
                     }
+                    else
+                    {
+                        MessageBox.Show("Please enter a number from 1-100.");
+                    }
+
                 }
                 else
                 {
-                    MessageBox.Show("Please enter a number from 1-100.");
+                    MessageBox.Show("Please enter a positive integer.");
                 }
-
             }
+
             else
             {
-                MessageBox.Show("Please enter a positive integer.");
+                MessageBox.Show("Please enter a number.");
             }
 
             textBox1.Text = "";

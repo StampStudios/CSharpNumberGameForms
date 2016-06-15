@@ -11,7 +11,6 @@ namespace guess100
             InitializeComponent();
         }
 
-        int targetNumber = 0;
         int counter = 0;
 
         private void Form1_Load(object sender, EventArgs e)

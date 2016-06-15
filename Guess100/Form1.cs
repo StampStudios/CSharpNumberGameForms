@@ -51,6 +51,8 @@ namespace CSharpNumberGame
                 MessageBox.Show("Please enter a positive integer.");
             }
 
+            textBox1.Text = "";
+
         }
     }
 }

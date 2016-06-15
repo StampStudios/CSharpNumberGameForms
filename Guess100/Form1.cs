@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 using System.Windows.Forms;
 
 namespace CSharpNumberGame
@@ -28,19 +29,28 @@ namespace CSharpNumberGame
         {
 
             string usrGuessStr = textBox1.Text;
-            int usrGuessInt = int.Parse(usrGuessStr);
-            counter += 1;
-            if (usrGuessInt == targetNumber)
+            bool usrGuessDigit = usrGuessStr.All(char.IsDigit);
+            if (usrGuessDigit == true)
             {
-                if (counter == 1)
+                int usrGuessInt = int.Parse(usrGuessStr);
+                counter += 1;
+                if (usrGuessInt == targetNumber)
                 {
-                    MessageBox.Show("Congratulations you got it first time!");
-                }
-                else
-                {
-                    MessageBox.Show("Congratulations you got it in " + counter + " guesses.");
+                    if (counter == 1)
+                    {
+                        MessageBox.Show("Congratulations you got it first time!");
+                    }
+                    else
+                    {
+                        MessageBox.Show("Congratulations you got it in " + counter + " guesses.");
+                    }
                 }
             }
+            else
+            {
+                MessageBox.Show("Please enter a positive integer.");
+            }
+
         }
     }
 }

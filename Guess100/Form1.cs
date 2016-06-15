@@ -11,7 +11,7 @@ namespace CSharpNumberGame
             InitializeComponent();
         }
 
-        int targetNumber;
+        int targetNumber = 0;
         int counter = 0;
 
         private void Form1_Load(object sender, EventArgs e)

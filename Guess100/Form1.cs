@@ -73,6 +73,7 @@ namespace guess100
 
             textBox1.Text = "";
             label3.Text = "Guesses: " + counter.ToString();
+            this.Text = "Guess The Number (" + counter.ToString() + ")";
 
         }
 
@@ -82,6 +83,8 @@ namespace guess100
             targetNumber = rnd.Next(1, 100);
             string targetNumberStr = targetNumber.ToString();
             counter = 0;
+            label3.Text = "Guesses: " + counter.ToString();
+            this.Text = "Guess The Number (" + counter.ToString() + ")";
         }
     }
 }

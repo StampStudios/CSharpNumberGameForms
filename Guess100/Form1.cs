@@ -73,7 +73,7 @@ namespace guess100
 
             textBox1.Text = "";
             label3.Text = "Guesses: " + counter.ToString();
-            this.Text = "Guess The Number (" + counter.ToString() + ")";
+            this.Text = "Guess100 (" + counter.ToString() + ")";
 
         }
 
@@ -84,7 +84,7 @@ namespace guess100
             string targetNumberStr = targetNumber.ToString();
             counter = 0;
             label3.Text = "Guesses: " + counter.ToString();
-            this.Text = "Guess The Number (" + counter.ToString() + ")";
+            this.Text = "Guess100 (" + counter.ToString() + ")";
         }
     }
 }

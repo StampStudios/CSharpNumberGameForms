@@ -72,7 +72,7 @@ namespace guess100
             }
 
             textBox1.Text = "";
-            label3.Text = counter.ToString();
+            label3.Text = "Guesses: " + counter.ToString();
 
         }
 

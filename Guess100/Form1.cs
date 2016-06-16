@@ -48,6 +48,10 @@ namespace guess100
                             {
                                 MessageBox.Show("Congratulations you got it in " + counter + " guesses.");
                             }
+                            Random rnd = new Random();
+                            targetNumber = rnd.Next(1, 100);
+                            string targetNumberStr = targetNumber.ToString();
+                            counter = 0;
                         }
                     }
                     else
@@ -69,6 +73,14 @@ namespace guess100
 
             textBox1.Text = "";
 
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Random rnd = new Random();
+            targetNumber = rnd.Next(1, 100);
+            string targetNumberStr = targetNumber.ToString();
+            counter = 0;
         }
     }
 }
